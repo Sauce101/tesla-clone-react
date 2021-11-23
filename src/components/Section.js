@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Fade } from "react-awesome-reveal";
 
-function Section({
+export function SectionOne({
+  id,
   title,
   description,
   leftBtnText,
@@ -9,8 +10,8 @@ function Section({
   backgroundImg,
 }) {
   return (
-    <Wrap bgImage={backgroundImg}>
-      <Fade direction="up">
+    <Wrap bgImage={backgroundImg} id={id}>
+      <Fade>
         <ItemText>
           <h1>{title}</h1>
           <p>{description}</p>
@@ -29,7 +30,36 @@ function Section({
   );
 }
 
-export default Section;
+export function Section({
+  id,
+  title,
+  description,
+  leftBtnText,
+  rightBtnText,
+  backgroundImg,
+}) {
+  return (
+    <Wrap bgImage={backgroundImg} id={id}>
+      <Fade direction="up">
+        <ItemText>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </ItemText>
+      </Fade>
+      <Buttons>
+        <Fade direction="up">
+          <ButtonGroup>
+            <LeftButton>{leftBtnText}</LeftButton>
+            {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
+          </ButtonGroup>
+        </Fade>
+        {/* <DownArrow src="/images/down-arrow.svg" /> */}
+      </Buttons>
+    </Wrap>
+  );
+}
+
+// export default Section;
 
 const Wrap = styled.div`
   z-index: 10;

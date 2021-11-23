@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import Section from "./Section";
+import { SectionOne, Section } from "./Section";
 
 function Home() {
   return (
     <Container>
-      <Section
+      <SectionOne
+        id="Model S"
         title="Model S"
         description="Order Online for Touchless Delivery"
         backgroundImg="model-s.jpg"
@@ -12,6 +13,7 @@ function Home() {
         rightBtnText="Existing Inventory"
       />
       <Section
+        id="Model Y"
         title="Model Y"
         description="Order Online for Touchless Delivery"
         backgroundImg="model-y.jpg"
@@ -19,6 +21,7 @@ function Home() {
         rightBtnText="Existing Inventory"
       />
       <Section
+        id="Model 3"
         title="Model 3"
         description="Order Online for Touchless Delivery"
         backgroundImg="model-3.jpg"
@@ -26,6 +29,7 @@ function Home() {
         rightBtnText="Existing Inventory"
       />
       <Section
+        id="Model X"
         title="Model X"
         description="Order Online for Touchless Delivery"
         backgroundImg="model-x.jpg"
@@ -33,6 +37,7 @@ function Home() {
         rightBtnText="Existing Inventory"
       />
       <Section
+        id="Solar Panels"
         title="Solar Panels"
         description="Lowest Cost Solar Panels in America"
         backgroundImg="solar-panel.jpg"
@@ -40,6 +45,7 @@ function Home() {
         rightBtnText="Learn more"
       />
       <Section
+        id="Solar Roof"
         title="Solar Roof"
         description="Produce Clean Energy From Your Roof"
         backgroundImg="solar-roof.jpg"
@@ -47,6 +53,7 @@ function Home() {
         rightBtnText="Learn more"
       />
       <Section
+        id="Accessories"
         title="Accessories"
         description=""
         backgroundImg="accessories.jpg"

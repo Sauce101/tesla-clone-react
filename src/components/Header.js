@@ -17,14 +17,14 @@ function Header() {
       <Menu>
         {cars &&
           cars.map((car, index) => (
-            <a key={index} href="/">
+            <a key={index} href={"#" + car}>
               {car}
             </a>
           ))}
       </Menu>
       <RightMenu>
         <a href="/">Shop</a>
-        <a href="/">Tesla Account</a>
+        <a href="/">Account</a>
         <CustomMenu onClick={() => setBurgerStatus(true)} />
       </RightMenu>
       <BurgerNav show={burgerStatus}>
@@ -33,8 +33,8 @@ function Header() {
         </CloseWrapper>
         {cars &&
           cars.map((car, index) => (
-            <li key={index}>
-              <a href="/">{car}</a>
+            <li key={index} onClick={() => setBurgerStatus(false)}>
+              <a href={"#" + car}>{car}</a>
             </li>
           ))}
         <li>
@@ -80,12 +80,12 @@ const Menu = styled.div`
 
   a {
     font-weight: 600;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 0 10px;
     flex-wrap: nowrap;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 `;
@@ -95,10 +95,10 @@ const RightMenu = styled.div`
   align-items: center;
   a {
     font-weight: 600;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-right: 10px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       display: none;
     }
   }

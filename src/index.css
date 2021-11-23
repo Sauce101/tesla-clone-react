@@ -1,6 +1,17 @@
+/* @font-face {
+  font-family: "Gotham-Light";
+  src: url("./fonts/Gotham-Light.otf") format("opentype");
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+} */
+
 * {
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  /* font-family: "Rubik", sans-serif; */
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  /* font-family: "Gotham-Light", sans-serif; */
   color: #393c41;
   margin: 0;
   padding: 0;
@@ -9,6 +20,16 @@
 body {
   width: 100%;
   overflow-x: hidden;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
 }
 
 a {
