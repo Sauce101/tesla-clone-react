@@ -67,4 +67,8 @@ export default Home;
 
 const Container = styled.div`
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
 `;

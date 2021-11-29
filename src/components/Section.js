@@ -74,6 +74,7 @@ const Wrap = styled.div`
   justify-content: space-between; //:vertical flips when flex column
   align-items: center; // horizontal flips when flex column
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
+  scroll-snap-align: start;
 `;
 
 const ItemText = styled.div`
