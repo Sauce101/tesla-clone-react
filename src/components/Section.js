@@ -65,7 +65,8 @@ const Wrap = styled.div`
   z-index: 10;
   width: 100vw;
   height: 100vh;
-  background-size: cover;
+  /* changed to width 100% from cover */
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   /* background-image: url("/images/model-s.jpg"); */
@@ -75,6 +76,10 @@ const Wrap = styled.div`
   align-items: center; // horizontal flips when flex column
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
   scroll-snap-align: start;
+  /* added this query same for buttons */
+  @media (max-width: 560px) {
+    background-size: auto 100%;
+  }
 `;
 
 const ItemText = styled.div`
@@ -85,7 +90,11 @@ const ItemText = styled.div`
 const ButtonGroup = styled.div`
   display: flex;
   margin-bottom: 30px;
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
+    flex-direction: column;
+  } */
+  /* change for small screens */
+  @media (max-width: 560px) {
     flex-direction: column;
   }
 `;
