@@ -74,11 +74,12 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between; //:vertical flips when flex column
   align-items: center; // horizontal flips when flex column
+  /* background-image: ${(props) => `url("/images/${props.bgImage}")`}; */
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
   scroll-snap-align: start;
   /* added this query same for buttons */
-  @media (max-width: 560px) {
-    background-size: auto 100%;
+  @media (max-width: 599px) {
+    background-size: 100%;
   }
 `;
 

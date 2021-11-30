@@ -8,7 +8,8 @@ function Home() {
         id="Model S"
         title="Model S"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-s.jpg"
+        backgroundImg="modelS-mobile.avif"
+        // backgroundImg="model-s.jpg"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
       />
@@ -16,7 +17,7 @@ function Home() {
         id="Model Y"
         title="Model Y"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-y.jpg"
+        backgroundImg="modelY-mobile.avif"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
       />
@@ -24,7 +25,7 @@ function Home() {
         id="Model 3"
         title="Model 3"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-3.jpg"
+        backgroundImg="model3-mobile.jpg"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
       />
@@ -32,7 +33,7 @@ function Home() {
         id="Model X"
         title="Model X"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model-x.jpg"
+        backgroundImg="modelX-mobile.avif"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
       />
@@ -40,7 +41,7 @@ function Home() {
         id="Solar Panels"
         title="Solar Panels"
         description="Lowest Cost Solar Panels in America"
-        backgroundImg="solar-panel.jpg"
+        backgroundImg="solarPanels-mobile.avif"
         leftBtnText="Order now"
         rightBtnText="Learn more"
       />
@@ -48,7 +49,7 @@ function Home() {
         id="Solar Roof"
         title="Solar Roof"
         description="Produce Clean Energy From Your Roof"
-        backgroundImg="solar-roof.jpg"
+        backgroundImg="SolarRoof.jpeg"
         leftBtnText="Order now"
         rightBtnText="Learn more"
       />
