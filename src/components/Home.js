@@ -25,7 +25,7 @@ function Home() {
         id="Model 3"
         title="Model 3"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model3.jpg"
+        backgroundImg="model3b.avif"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
       />
