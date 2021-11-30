@@ -8,7 +8,7 @@ function Home() {
         id="Model S"
         title="Model S"
         description="Order Online for Touchless Delivery"
-        backgroundImg="modelS-mobile.avif"
+        backgroundImg="modelS.avif"
         // backgroundImg="model-s.jpg"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
@@ -17,7 +17,7 @@ function Home() {
         id="Model Y"
         title="Model Y"
         description="Order Online for Touchless Delivery"
-        backgroundImg="modelY-mobile.avif"
+        backgroundImg="modelY.avif"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
       />
@@ -25,7 +25,7 @@ function Home() {
         id="Model 3"
         title="Model 3"
         description="Order Online for Touchless Delivery"
-        backgroundImg="model3-mobile.jpg"
+        backgroundImg="model3.jpg"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
       />
@@ -33,7 +33,7 @@ function Home() {
         id="Model X"
         title="Model X"
         description="Order Online for Touchless Delivery"
-        backgroundImg="modelX-mobile.avif"
+        backgroundImg="modelX.avif"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
       />
@@ -41,7 +41,7 @@ function Home() {
         id="Solar Panels"
         title="Solar Panels"
         description="Lowest Cost Solar Panels in America"
-        backgroundImg="solarPanels-mobile.avif"
+        backgroundImg="solarPanels.avif"
         leftBtnText="Order now"
         rightBtnText="Learn more"
       />
@@ -49,7 +49,7 @@ function Home() {
         id="Solar Roof"
         title="Solar Roof"
         description="Produce Clean Energy From Your Roof"
-        backgroundImg="SolarRoof.jpeg"
+        backgroundImg="solarRoof2.avif"
         leftBtnText="Order now"
         rightBtnText="Learn more"
       />
@@ -57,7 +57,7 @@ function Home() {
         id="Accessories"
         title="Accessories"
         description=""
-        backgroundImg="accessories.jpg"
+        backgroundImg="Mobile-Accessories.webp"
         leftBtnText="Shop now"
       />
     </Container>

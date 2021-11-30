@@ -18,7 +18,7 @@ export function SectionOne({
         </ItemText>
       </Fade>
       <Buttons>
-        <Fade direction="up">
+        <Fade>
           <ButtonGroup>
             <LeftButton>{leftBtnText}</LeftButton>
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
@@ -40,14 +40,14 @@ export function Section({
 }) {
   return (
     <Wrap bgImage={backgroundImg} id={id}>
-      <Fade direction="up">
+      <Fade>
         <ItemText>
           <h1>{title}</h1>
           <p>{description}</p>
         </ItemText>
       </Fade>
       <Buttons>
-        <Fade direction="up">
+        <Fade>
           <ButtonGroup>
             <LeftButton>{leftBtnText}</LeftButton>
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
@@ -66,7 +66,7 @@ const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
   /* changed to width 100% from cover */
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   /* background-image: url("/images/model-s.jpg"); */
@@ -76,10 +76,11 @@ const Wrap = styled.div`
   align-items: center; // horizontal flips when flex column
   /* background-image: ${(props) => `url("/images/${props.bgImage}")`}; */
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
-  scroll-snap-align: start;
+  scroll-snap-align: end;
   /* added this query same for buttons */
   @media (max-width: 599px) {
-    background-size: 100%;
+    background-image: ${(props) => `url("/images/m/${props.bgImage}")`};
+    background-size: cover 100%;
   }
 `;
 
