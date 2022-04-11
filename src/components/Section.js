@@ -8,9 +8,10 @@ export function SectionOne({
   leftBtnText,
   rightBtnText,
   backgroundImg,
+  alt,
 }) {
   return (
-    <Wrap bgImage={backgroundImg} id={id}>
+    <Wrap bgImage={backgroundImg} id={id} alt={alt}>
       <Fade>
         <ItemText>
           <h1>{title}</h1>
@@ -24,7 +25,7 @@ export function SectionOne({
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
           </ButtonGroup>
         </Fade>
-        <DownArrow src="/images/down-arrow.svg" />
+        <DownArrow src="/images/down-arrow.svg" alt="down arrow" />
       </Buttons>
     </Wrap>
   );
@@ -37,9 +38,10 @@ export function Section({
   leftBtnText,
   rightBtnText,
   backgroundImg,
+  alt,
 }) {
   return (
-    <Wrap bgImage={backgroundImg} id={id}>
+    <Wrap bgImage={backgroundImg} id={id} alt={alt}>
       <Fade>
         <ItemText>
           <h1>{title}</h1>
@@ -53,28 +55,22 @@ export function Section({
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
           </ButtonGroup>
         </Fade>
-        {/* <DownArrow src="/images/down-arrow.svg" /> */}
       </Buttons>
     </Wrap>
   );
 }
 
-// export default Section;
-
 const Wrap = styled.div`
   z-index: 10;
   width: 100vw;
   height: 100vh;
-  /* changed to width 100% from cover */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-image: url("/images/model-s.jpg"); */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; //:vertical flips when flex column
-  align-items: center; // horizontal flips when flex column
-  /* background-image: ${(props) => `url("/images/${props.bgImage}")`}; */
+  justify-content: space-between;
+  align-items: center;
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
   scroll-snap-align: end;
   /* added this query same for buttons */
@@ -92,9 +88,6 @@ const ItemText = styled.div`
 const ButtonGroup = styled.div`
   display: flex;
   margin-bottom: 30px;
-  /* @media (max-width: 768px) {
-    flex-direction: column;
-  } */
   /* change for small screens */
   @media (max-width: 560px) {
     flex-direction: column;
@@ -125,7 +118,6 @@ const RightButton = styled(LeftButton)`
 
 const DownArrow = styled.img`
   height: 40px;
-  /* overflow-x: hidden; */
   animation: animateDown infinite 1.5s;
 `;
 

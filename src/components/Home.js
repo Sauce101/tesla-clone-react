@@ -7,15 +7,16 @@ function Home() {
       <SectionOne
         id="Model S"
         title="Model S"
+        alt="model s"
         description="Order Online for Touchless Delivery"
         backgroundImg="modelS.avif"
-        // backgroundImg="model-s.jpg"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
       />
       <Section
         id="Model Y"
         title="Model Y"
+        alt="model y"
         description="Order Online for Touchless Delivery"
         backgroundImg="modelY.avif"
         leftBtnText="Custom Order"
@@ -24,6 +25,7 @@ function Home() {
       <Section
         id="Model 3"
         title="Model 3"
+        alt="model 3"
         description="Order Online for Touchless Delivery"
         backgroundImg="model3b.avif"
         leftBtnText="Custom Order"
@@ -32,6 +34,7 @@ function Home() {
       <Section
         id="Model X"
         title="Model X"
+        alt="model x"
         description="Order Online for Touchless Delivery"
         backgroundImg="modelX.avif"
         leftBtnText="Custom Order"
@@ -40,6 +43,7 @@ function Home() {
       <Section
         id="Solar Panels"
         title="Solar Panels"
+        alt="solar panels"
         description="Lowest Cost Solar Panels in America"
         backgroundImg="solarPanels.avif"
         leftBtnText="Order now"
@@ -48,6 +52,7 @@ function Home() {
       <Section
         id="Solar Roof"
         title="Solar Roof"
+        alt="solar roof"
         description="Produce Clean Energy From Your Roof"
         backgroundImg="solarRoof2.avif"
         leftBtnText="Order now"
@@ -56,6 +61,7 @@ function Home() {
       <Section
         id="Accessories"
         title="Accessories"
+        alt="accessories"
         description=""
         backgroundImg="Mobile-Accessories.webp"
         leftBtnText="Shop now"

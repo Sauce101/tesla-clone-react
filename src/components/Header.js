@@ -12,7 +12,7 @@ function Header() {
   return (
     <Container>
       <a href="/">
-        <img src="/images/logo.svg" alt="" />
+        <img src="/images/logo.svg" alt="tesla logo" />
       </a>
       <Menu>
         {cars &&
@@ -31,27 +31,14 @@ function Header() {
         <CloseWrapper>
           <CustomClose onClick={() => setBurgerStatus(false)} />
         </CloseWrapper>
-        {cars &&
-          cars.map((car, index) => (
-            <li key={index} onClick={() => setBurgerStatus(false)}>
-              <a href={"#" + car}>{car}</a>
-            </li>
-          ))}
-        <li>
-          <a href="/">Existing Inventory</a>
-        </li>
-        <li>
-          <a href="/">Used Inventory</a>
-        </li>
-        <li>
-          <a href="/">Trade-In</a>
-        </li>
-        <li>
-          <a href="/">Cybertruck</a>
-        </li>
-        <li>
-          <a href="/">Roadster</a>
-        </li>
+        <ul>
+          {cars &&
+            cars.map((car, index) => (
+              <li key={index} onClick={() => setBurgerStatus(false)}>
+                <a href={"#" + car}>{car}</a>
+              </li>
+            ))}
+        </ul>
       </BurgerNav>
     </Container>
   );
